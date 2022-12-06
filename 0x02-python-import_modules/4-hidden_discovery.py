@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 if __name__ == "__name__":
     import hidden_4
-    name = dir(hidden_4)
-    for names in name:
-        if names[:2] != "__":
-            print(names)
+
+    for item in dir(hidden_4):
+        if item.startswith('__'):
+            continue
+        print(item)
