@@ -9,7 +9,7 @@ if __name__ == "__main__":
         print("{} argument:".format(ArgLen - 1))
     else:
         print("{} arguments:".format(ArgLen - 1))
-    for index, var in enumerate(argv):
-        if index == 0:
-            continue
-        print("{}: {}".format(index, var))
+        for index, var in enumerate(argv):
+            if index == 0:
+                continue
+            print("{}: {}".format(index, var))
